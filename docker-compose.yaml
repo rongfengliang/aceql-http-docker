@@ -8,6 +8,7 @@ services:
       - "POSTGRES_PASSWORD:dalong"
     aceql-http:
       build: ./
+      image: dalongrong/aceql-http:4.0
       volumes: 
       - "./flame:/app/arthas-output"
       ports:
