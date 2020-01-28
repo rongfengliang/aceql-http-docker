@@ -26,6 +26,14 @@ CREATE TABLE appdemos (
     id SERIAL PRIMARY KEY,
     appname text
 );
+CREATE TABLE user_login
+(               
+  username              varchar(255)    not null,     
+  hash_password         varchar(40)     not null,
+        PRIMARY KEY (username)
+);
+insert into user_login values ('username', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8');
+insert into user_login values ('MyUsername', 'eabbec6f31804eb968e2faeaaef150546a595fc3');
 ```
 
 * create session
